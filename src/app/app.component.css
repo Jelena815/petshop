@@ -1,0 +1,11 @@
+.zaglavlje{
+    background-color: orange;
+    width: 100%;
+}
+
+.sadrzaj{
+    margin-top: 4vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    background-color: rgb(252, 219, 30);
+}
