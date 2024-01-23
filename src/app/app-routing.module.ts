@@ -6,6 +6,7 @@ import { ProizvodiComponent } from './sadrzaj/proizvodi/proizvodi.component';
 import { PsiComponent } from './sadrzaj/proizvodi/psi/psi.component';
 import { MackeComponent } from './sadrzaj/proizvodi/macke/macke.component';
 import { RibiceComponent } from './sadrzaj/proizvodi/ribice/ribice.component';
+import { KorpaComponent } from './sadrzaj/korpa/korpa.component';
 
 const routes: Routes = [
   {path: 'galerija', component: GalerijaComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'psi', component: PsiComponent},
   {path: 'macke', component: MackeComponent},
   {path: 'ribice', component: RibiceComponent},
+  {path: 'korpa', component: KorpaComponent}
 ];
 
 @NgModule({

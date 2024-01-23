@@ -1,13 +1,10 @@
 .zaglavlje{
     background-color: orange;
-    /* background-color: #050301; */
     width: 100%;
 }
 
 .sadrzaj{
-    margin-top: 4vh;
+    margin-top: 5vh;
     margin-left: 20vh;
     margin-right: 20vh;
-    background-color: rgb(252, 219, 30);
-    /* background-color: rgb(101, 101, 98); */
 }

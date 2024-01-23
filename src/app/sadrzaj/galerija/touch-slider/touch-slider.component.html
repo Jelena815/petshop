@@ -1,0 +1,21 @@
+<div class="slider-container">
+    <div 
+        class="slider-item" 
+        *ngFor="let slika of slike; let i = index"
+        [ngClass]="{
+            'selected': i === selectedIndex,
+            'prev': i === selectedIndex - 1,
+            'next': i === selectedIndex + 1,
+            'hideLetf': i < selectedIndex - 1,
+            'hideRight': i > selectedIndex + 1
+        }"
+    >
+        <img 
+            [src]="slika.imgSrc"
+            [alt]="slika.imgAlt" 
+            class="slider-img"
+            (panright)="showPrev(i)"
+            (panLeft)="showNext(i)"
+        >
+    </div>
+</div>

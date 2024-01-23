@@ -22,7 +22,7 @@ export class ProizvodiComponent {
     alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
   }
 
-  onSubmit(){
-    alert("a");
-  }
+  // onSubmit(){
+  //   alert("a");
+  // }
 }

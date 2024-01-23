@@ -1,0 +1,11 @@
+:host{
+    
+    .container{
+        width: 900px;
+        height: 400px;
+    }
+}
+
+.naslov{
+    margin-bottom: 5vh;
+}

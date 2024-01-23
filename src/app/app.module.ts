@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,8 @@ import { MackeComponent } from './sadrzaj/proizvodi/macke/macke.component';
 import { PsiComponent } from './sadrzaj/proizvodi/psi/psi.component';
 import { RibiceComponent } from './sadrzaj/proizvodi/ribice/ribice.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { KorpaComponent } from './sadrzaj/korpa/korpa.component';
+import { TouchSliderComponent } from './sadrzaj/galerija/touch-slider/touch-slider.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     ONamaComponent,
     MackeComponent,
     PsiComponent,
-    RibiceComponent
+    RibiceComponent,
+    KorpaComponent,
+    TouchSliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HammerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
