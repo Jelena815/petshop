@@ -9,17 +9,7 @@ import { ProizvodVrednost } from 'src/app/proizvodVrednost';
   styleUrls: ['./proizvodi.component.css']
 })
 export class ProizvodiComponent {
-
-  // constructor(getId:number, getNaziv: string)
-  // {
-  //   this.getId = getId;
-  //   this.getNaziv = getNaziv
-  // }  
-  
-  // public getId: number =0;
-  // public getNaziv: string = "";
-  
-/////
+ 
   proizvodi = ProizvodVrednost;
   kolicina: number = 0;
 
@@ -28,10 +18,4 @@ export class ProizvodiComponent {
     alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
   }
 
-
-  // dohvatiPodatke(id: number,naziv: string){
-  //   // kolicina = document.getElementById('kolicina' + id);
-  //   this.getId = id;
-  //   this.getNaziv = naziv;
-  // }
 }

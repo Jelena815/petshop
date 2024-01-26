@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProizvodPromenjive } from 'src/app/proizvod';
 import { ProizvodVrednost } from 'src/app/proizvodVrednost';
 
 @Component({
@@ -9,6 +8,12 @@ import { ProizvodVrednost } from 'src/app/proizvodVrednost';
 })
 export class MackeComponent {
 
+  proizvodi = ProizvodVrednost.filter(p => p.zivotinja == 'macka');
+  kolicina: number = 0;
 
-  
+
+  dodaj(id: number){
+    alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
+  }
+
 }

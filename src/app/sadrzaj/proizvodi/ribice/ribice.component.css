@@ -1,0 +1,13 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+img{
+    width: 15vh;
+    height: 15vh;
+}
+
+.polje{
+    width: 30vh;
+}
+.polje2{
+    width: 15vh;
+}
