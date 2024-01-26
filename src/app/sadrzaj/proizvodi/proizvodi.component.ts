@@ -14,14 +14,15 @@ export class ProizvodiComponent {
   // {
   //   this.getId = getId;
   //   this.getNaziv = getNaziv
-  // }
-
-  proizvodi = ProizvodVrednost;
-  kolicina: number = 0;
+  // }  
   
   // public getId: number =0;
   // public getNaziv: string = "";
   
+/////
+  proizvodi = ProizvodVrednost;
+  kolicina: number = 0;
+
 
   dodaj(id: number){
     alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);

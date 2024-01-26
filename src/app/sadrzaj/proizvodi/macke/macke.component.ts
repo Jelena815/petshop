@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProizvodPromenjive } from 'src/app/proizvod';
+import { ProizvodVrednost } from 'src/app/proizvodVrednost';
 
 @Component({
   selector: 'app-macke',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class MackeComponent {
 
+
+  
 }
