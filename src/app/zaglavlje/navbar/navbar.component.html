@@ -3,17 +3,44 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="./galerija">Galerija</a>
+            <a class="nav-link" aria-current="page" routerLink="/galerija">Galerija</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="./o-nama">O nama</a>
-          </li>
+          <!-- </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="./proizvodi">Proizvodi</a>
-          </li>
+            <a class="nav-link" routerLink="/proizvodi">Proizvodi</a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="./korpa">Korpa</a>
+            <a class="nav-link" routerLink="/korpa">Korpa</a>
           </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              proizvodi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" [routerLink]="['/macke']">macke</a>
+              <a class="dropdown-item" [routerLink]="['/psi']">psi</a>
+            </div>
+          </li> -->
+          <div mdbDropdown class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              Dropdown button
+            </button>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          
         </ul>
       </div>
     </div>

@@ -16,6 +16,7 @@ import { RibiceComponent } from './sadrzaj/proizvodi/ribice/ribice.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { KorpaComponent } from './sadrzaj/korpa/korpa.component';
 import { TouchSliderComponent } from './sadrzaj/galerija/touch-slider/touch-slider.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TouchSliderComponent } from './sadrzaj/galerija/touch-slider/touch-slid
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HammerModule
+    HammerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

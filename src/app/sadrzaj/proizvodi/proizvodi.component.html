@@ -1,4 +1,5 @@
 <h1>Svi proizvodi</h1>
+
 <table class="table">
     <tbody>
         <tr *ngFor="let proizvod of proizvodi;">
@@ -8,7 +9,11 @@
             <td class="polje">{{proizvod.opis}}</td>
             <td class="polje2">{{proizvod.cena}} din.</td>
             <td class="polje2"><input type="number" id="{{'kolicina' + proizvod.id}}" name="kolicina" min="1" max="10" value="1"></td>
-            <td><button (click)="dodaj(proizvod.id)">Dodaj</button></td>
+            <td>
+                <button 
+                    (click)="dodaj(proizvod.id)"
+                >Dodaj
+                </button></td>
         </tr>
     </tbody>
 </table>

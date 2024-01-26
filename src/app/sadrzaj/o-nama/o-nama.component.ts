@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-o-nama',
@@ -7,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class ONamaComponent {
 
+  // lat: number = 51.678418;
+  // lng: number = 7.809007;
 }
+// @NgModule({
+//   imports: [
+//     BrowserModule,
+//     AgmCoreModule.forRoot({
+//       apiKey: ''
+//     })
+//   ],
+//   providers: [],
+//   declarations: [ AppComponent ],
+//   bootstrap: [ AppComponent ]
+// })

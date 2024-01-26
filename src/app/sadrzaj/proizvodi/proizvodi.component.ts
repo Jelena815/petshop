@@ -10,19 +10,27 @@ import { ProizvodVrednost } from 'src/app/proizvodVrednost';
 })
 export class ProizvodiComponent {
 
-  // constructor(kolicina:number)
+  // constructor(getId:number, getNaziv: string)
   // {
-  //   this.kolicina = kolicina;
+  //   this.getId = getId;
+  //   this.getNaziv = getNaziv
   // }
 
   proizvodi = ProizvodVrednost;
   kolicina: number = 0;
+  
+  // public getId: number =0;
+  // public getNaziv: string = "";
+  
 
   dodaj(id: number){
     alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
   }
 
-  // onSubmit(){
-  //   alert("a");
+
+  // dohvatiPodatke(id: number,naziv: string){
+  //   // kolicina = document.getElementById('kolicina' + id);
+  //   this.getId = id;
+  //   this.getNaziv = naziv;
   // }
 }
