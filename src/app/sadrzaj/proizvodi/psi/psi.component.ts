@@ -9,9 +9,8 @@ import { ProizvodVrednost } from 'src/app/proizvodVrednost';
 export class PsiComponent {
   proizvodi = ProizvodVrednost.filter(p => p.zivotinja == 'pas');
   kolicina: number = 0;
-
-
-  dodaj(id: number){
-    alert("proizvod: "+ id + " kolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
+  
+  dodaj(naziv: string,id: number){
+    alert("Dodat proizvod u korpu: "+ naziv + " \nKolicina: "+ (document.getElementById('kolicina' + id) as HTMLInputElement).value);
   }
 }

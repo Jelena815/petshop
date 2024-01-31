@@ -11,8 +11,8 @@
             <td class="polje2">{{proizvod.cena}} din.</td>
             <td class="polje2"><input type="number" id="{{'kolicina' + proizvod.id}}" name="kolicina" min="1" max="10" value="1"></td>
             <td>
-                <button 
-                    (click)="dodaj(proizvod.id)"
+                <button  
+                    (click)="dodaj(proizvod.naziv, proizvod.id)"
                 >Dodaj
                 </button></td>
         </tr>
